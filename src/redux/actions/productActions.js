@@ -2,16 +2,16 @@ import { ActionTypes } from "../constants/actionTypes";
 
 //functions that return an object with TYPE and PAYLOAD
 
-export const setProducts = (products) => {
+export const setProducts = (posts) => {
   return {
-      type: ActionTypes.SET_PRODUCTS,
-      payload: products
+      type: ActionTypes.SET_POST,
+      payload: posts
   }
 }
 
-export const selectedProduct = (product) => {
+export const selectedPost = (post) => {
   return {
-    type: ActionTypes.SELECTED_PRODUCT,
-    payload: product
+    type: ActionTypes.SELECTED_POST,
+    payload: post
   }
 }

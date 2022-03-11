@@ -4,28 +4,21 @@ import axios from "axios"
 import { useDispatch, useSelector } from "react-redux";
 import { setProducts } from "../redux/actions/productActions";
 import Post from "./Post";
+import { Link } from "react-router-dom";
+import '../Styles/style.css'
 
 const AllProducts = () => {
 
-  // const dispatch = useDispatch();
-  // const allPosts = useSelector(state => state.allPosts.posts)
-  // const fetchPosts = async() => {
-  //   const response = await axios.get("https://jsonplaceholder.typicode.com/posts").catch((err) => {
-  //     console.log("Error", err)
-  //   })
-  //   dispatch(setProducts(response.data))
-  // }
-
-  // useEffect(() => {
-  //   fetchPosts() 
-  // }, [])
-
+  const allPosts = useSelector(state => state.allPosts.posts)
+  
+  console.log('aaa',allPosts)
   return (
-    // <div>{allPosts.map((post) => 
-    //   <Post post={post}/>
-    // )}</div>
-    <><Post /></>
-  )
+    <div className="d-flex flex-column align-items-center">{allPosts?.map((post) => 
+      <Link className="cardLink" to={`/post/${post.id}`} key={post.id}>
+        <Post post={post}/>
+      </Link>
+    )}</div>
+    )
 }
 
 export default AllProducts
