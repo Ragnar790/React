@@ -10,6 +10,7 @@ const Post = (props) => {
         <Card.Body>
           <Card.Title>{title}</Card.Title>
           <Card.Text>
+            This is the bodyyyyyyy
             {body}
           </Card.Text>
         </Card.Body>
