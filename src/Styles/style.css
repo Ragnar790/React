@@ -7,3 +7,14 @@
   width: 50rem;
   margin: 1rem;
 }
+.linkContainer {
+  margin: 1rem 0rem 1rem 0rem;
+}
+.linkToExamp {
+  text-decoration: none;
+  color: rgb(107, 107, 107);
+  font-size: 1.5rem;
+}
+.AllLinks {
+  background-image: url("https://img.freepik.com/free-vector/abstract-low-poly-orange-yellow-background_1017-32111.jpg?w=1060");
+}
